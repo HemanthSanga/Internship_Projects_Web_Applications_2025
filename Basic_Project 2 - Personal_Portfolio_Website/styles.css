@@ -39,16 +39,17 @@ header {
 .nav-links a.active {
   color: #00bcd4;
 }
-
+/*class Hero in Home Page*/
 .hero {
-  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 60px 20px;
   height: 80vh;
   background: linear-gradient(to right, #00bcd4, #2196f3);
   color: white;
   text-align: center;
 }
+
 
 .hero-content h2 {
   font-size: 2.5rem;
@@ -59,6 +60,7 @@ header {
   color: #ffeb3b;
 }
 
+/*class btn in Home Page*/
 .btn {
   background: #fff;
   color: #2196f3;
@@ -76,10 +78,44 @@ header {
   color: #fff;
 }
 
-.about-section,
-.projects,
-.contact-section {
+/*class about-section in About Page*/
+.about-section{
+  background: linear-gradient(to right, #00bcd4, #2196f3);
   padding: 60px 20px;
+  height: 80vh;
+  color: white;
+  text-align: center;
+}
+
+.about-section h2, .about-section h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.about-section p, .about-section .skills {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/*class projects in Projects Page*/
+.projects{
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  padding: 60px 20px;
+  height: 80vh;
+  color: white;
+  text-align: center;
+}
+
+/*class contact-section in Projects Page*/
+.contact-section {
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  padding: 60px 20px;
+  height: 80vh;
+  color: white;
   text-align: center;
 }
 
