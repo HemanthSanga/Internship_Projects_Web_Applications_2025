@@ -39,29 +39,29 @@ header {
 .nav-links a.active {
   color: #00bcd4;
 }
-/*class Hero in Home Page*/
-.hero {
+/*class home in Home Page*/
+.home {
   justify-content: center;
   align-items: center;
   padding: 60px 20px;
-  height: 80vh;
-  background: linear-gradient(to right, #00bcd4, #2196f3);
+  height: 90vh;
+  background: linear-gradient(to right, #b3dbff, #00bcd4, #2196f3);
   color: white;
   text-align: center;
 }
 
 
-.hero-content h2 {
+.home-content h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-.hero-content span {
+.home-content span {
   color: #ffeb3b;
 }
 
 /*class btn in Home Page*/
-.btn {
+.button-home {
   background: #fff;
   color: #2196f3;
   border: none;
@@ -78,74 +78,126 @@ header {
   color: #fff;
 }
 
-/*class about-section in About Page*/
-.about-section{
-  background: linear-gradient(to right, #00bcd4, #2196f3);
-  padding: 60px 20px;
-  height: 80vh;
-  color: white;
-  text-align: center;
-}
-
-.about-section h2, .about-section h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-}
-
-.about-section p, .about-section .skills {
-  max-width: 600px;
-  margin: auto;
-  line-height: 1.6;
-  font-size: 1rem;
-  color: #ccc;
-}
-
-/*class projects in Projects Page*/
-.projects{
-  background: linear-gradient(to right, #00bcd4, #2196f3);
-  padding: 60px 20px;
-  height: 80vh;
-  color: white;
-  text-align: center;
-}
-
-/*class contact-section in Projects Page*/
-.contact-section {
-  background: linear-gradient(to right, #00bcd4, #2196f3);
-  padding: 60px 20px;
-  height: 80vh;
-  color: white;
-  text-align: center;
-}
-
 .profile-img {
   width: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
 
-.skills {
-  display: inline-block;
+
+/*class about-section in About Page*/
+.about-section{
+  display: flex;
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  padding: 60px 20px;
+  height: 90vh;
+  color: white;
   text-align: left;
 }
 
+.about-section h2, .about-section h3, .about-section h4, .about-section h5, .about-section h6, .about-section h7 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.about-section p, .skills, .education, .languages, .hobbies, .sports{
+  max-width: 1000px;
+  padding-left: 20px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.about-left{
+  width: 15%;
+  background-color: #087cc4;
+  padding: 10px;
+  text-align: left;
+  box-sizing: border-box;
+
+}
+
+.about-right{
+  width: 80%;
+  background-color: #9dd7fb;
+  padding: 10px;
+  text-align: left;
+  color: #333333; /* Shade of black colour for Right section text */
+  box-sizing: border-box;
+}
+/*class projects in Projects Page*/
+.projects{
+  background: linear-gradient(to right,#b3dbff, #00bcd4, #2196f3);
+  padding: 60px 20px;
+  height: 90vh;
+  color: white;
+  text-align: center;
+}
+.projects h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
 .project-grid {
   display: grid;
+  color: #222;
+  margin-top: 20px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
+.project-grid h3, h4, h5 {  /*leveling project headings h3 to h5 to same font size*/
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
 
-.project-card {
-  background: white;
+.project-grid p {   /*leveling paragraphs to same font size*/
+  font-size: 1rem;
+}
+
+.project-card1, .project-card2, .project-card3 {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
 
-.project-card:hover {
+.project-card1:hover, .project-card2:hover, .project-card3:hover {
   transform: translateY(-5px);
+}
+
+.project-card1 p, .project-card2 p, .project-card3 p {
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project-card1{
+  background: #5F9EA0;
+}
+
+.project-card2{
+  background: #FF7F50;
+}
+
+.project-card3{
+  background: #9ACD32;
+}
+
+.button{
+  margin-top: 10px;
+}
+
+/*class contact-section in Contacts Page*/
+.contact-section {
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  padding: 60px 20px;
+  height: 90vh;
+  color: white;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .contact-section form {
@@ -162,10 +214,10 @@ input, textarea {
   border: 1px solid #ccc;
 }
 
-footer {
+footer {  /*footer style for all pages*/
   background: #222;
   color: white;
   text-align: center;
   padding: 15px;
-  margin-top: 50px;
+  margin-top: 0px;
 }
