@@ -110,10 +110,12 @@ header {
 }
 
 .about-left{
+
   width: 15%;
   background-color: #087cc4;
   padding: 10px;
-  text-align: left;
+  justify-content: space-between;
+  align-items: center;
   box-sizing: border-box;
 }
 
@@ -135,6 +137,13 @@ header {
   border: 1px solid #333333; /*A horizontal line in between each section of information.*/
   margin: 20px 0;
   width: 60%;
+}
+.starRating{
+  color: #ccc; /*star rating grey color*/
+  font-size: 12px;
+}
+.starRating .checked{
+  color: #ffeb3b; /*star rating color*/
 }
 /*class projects in Projects Page*/
 .projects{
